@@ -1,0 +1,115 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+  width: 400px;
+  background: rgba(138, 138, 138, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 75%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ff5722;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;  /* Add 10px space between the input and the button */
+}
+
+button:disabled {
+  background: #19ab58;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background: #1b6dfa;
+}
+
+ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+i {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+i:hover {
+  transform: scale(1.2);
+}
+
+.fa-pencil {
+  color: #000000;
+  padding: 15px;
+}
+
+.fa-xmark {
+  color: #ff1100;
+  padding: 15px;
+}
