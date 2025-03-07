@@ -7,7 +7,7 @@
       <button [disabled]="!todo.Title" (click)="addTodo()" type="submit">
         {{ todo.Id ? 'Update' : 'Add' }}
       </button>
-    </div>
+    </div> 
 
     <ul>
       <li *ngFor="let item of todoList">
@@ -15,7 +15,7 @@
         <div class="icons">
           <i (click)="editTodo(item)" class="fa-solid fa-pen-to-square"></i>
           <i (click)="deleteTodo(item.Id)" class="fa-solid fa-xmark"></i>
-        </div>
+        </div> 
       </li>
     </ul>
   </div>

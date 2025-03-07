@@ -8,7 +8,7 @@ import { Todo } from './model';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent {
+export class AppComponent { 
    todoList: Todo[] = [];
    todo: Todo = this.initTodo;
 
@@ -47,4 +47,4 @@ export class AppComponent {
          this.todoList = this.todoList.filter(o => o.Id !== Id);
       }
    }
-}
+} 
